@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.logo {
+    height: 18vh;
+  }
+  li {
+    list-style-type: none;
+  }
+  
+  .profileImage-navbar {
+    height: 5vh;
+    width: 5vh;
+    border-radius: 50%;
+  }
+
+.articles-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-top: 4vh;
+}
+
+.article-card{
+    background-color: rgba(220, 220, 220, 0.461);
+    padding: 2vh;
+    border-radius: 2vh;
+    margin: 2vh;
+    height: 58.9vh;
+    cursor: pointer;
+}
+
+.article-card:hover{
+   scale:  1.03;
+   transition: all .3s ease-in-out;
+}
+
+.authorInfo{
+display: flex;
+align-items: center;
+text-transform: capitalize;
+overflow: hidden;
+height: 5vh;
+max-width: calc(27vh  * (16/9));
+}
+.authorInfo img{
+    height: 5vh;
+    width: 5vh;
+    border-radius: 50%;
+}
+.authorInfo div{
+   padding-left: 0.5vw;
+   font-weight: 700;
+}
+
+.authorImage{
+    height: 30vh;
+    width: calc(30vh  * (16/9)); 
+    border-radius: 1vh;
+    margin-top: 1.5vh;
+    object-fit: cover;
+}
+
+.authorHeading{
+font-size: 2.6vh;
+font-weight: 700;
+padding-top: 1vh;
+text-transform: capitalize;
+}
+.authorSubHeading{
+    font-size: 2vh;
+    font-weight: 500;
+    opacity: 0.9;
+    text-transform: capitalize;
+    }
+.authorDescription{
+    padding-top: 0.5vh;
+    width: calc(27vh  * (16/9));
+    height: 7vh;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+
+.authorControls {
+    display: flex;
+    justify-content: flex-end;
+   
+    }
+
+.authorControls i{
+padding: 1vh 0.5vh;
+cursor: pointer;
+
+}
+
+.authorControls i:hover{
+   color: rgb(0, 166, 255);
+    }
+
+footer{
+    position: fixed;
+    bottom:  0;
+}
